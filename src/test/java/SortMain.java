@@ -5,8 +5,8 @@
  */
 
 import com.sort.inner.NumberSort;
-import com.sort.inner.impl.BubbleSort;
-import com.sort.inner.impl.QuickSort;
+import com.sort.inner.impl.HeapSort;
+import com.sort.inner.impl.MergeSort;
 
 import java.util.Arrays;
 
@@ -26,7 +26,7 @@ public class SortMain {
         System.out.println(Arrays.toString(nums));
 
         System.out.println("排序后");
-        NumberSort sort = new QuickSort();
+        NumberSort sort = new MergeSort();
         sort.sort(nums);
         System.out.println(Arrays.toString(nums));
     }
