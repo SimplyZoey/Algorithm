@@ -6,6 +6,7 @@
 
 import com.search.graph.GraphSearch;
 import com.search.graph.impl.BreadthFirstSearch;
+import com.search.graph.impl.DijkstraSearch;
 
 /**
  * 〈〉
@@ -16,7 +17,7 @@ import com.search.graph.impl.BreadthFirstSearch;
  */
 public class SearchMain {
     public static void main(String[] args){
-        GraphSearch search = new BreadthFirstSearch();
+        GraphSearch search = new DijkstraSearch();
         search.search();
     }
 }
