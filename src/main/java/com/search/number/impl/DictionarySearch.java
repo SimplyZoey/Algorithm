@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 /**
  * 〈字典序算法〉
- *
+ *  数字中有重复数字不适用，需要额外处理
  * @author shitian
  * @create 2018/5/24
  * @since 1.0.0
