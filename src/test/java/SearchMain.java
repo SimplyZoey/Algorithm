@@ -7,6 +7,7 @@
 import com.search.graph.GraphSearch;
 import com.search.graph.impl.BreadthFirstSearch;
 import com.search.graph.impl.DijkstraSearch;
+import com.search.graph.impl.NumberBreadthFirstSearch;
 import com.search.number.NumberSearch;
 import com.search.number.impl.DictionarySearch;
 
@@ -19,12 +20,12 @@ import com.search.number.impl.DictionarySearch;
  */
 public class SearchMain {
     public static void main(String[] args){
-        //GraphSearch();
-        numberSearch();
+        GraphSearch();
+//        numberSearch();
     }
 
     private static void GraphSearch(){
-        GraphSearch search = new DijkstraSearch();
+        GraphSearch search = new NumberBreadthFirstSearch();
         search.search();
     }
 
